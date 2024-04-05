@@ -1,28 +1,71 @@
 "use client";
 
 import FeatureCard from "../ui/FeatureCard";
+import Image from "next/image";
 
 const featuresList = [
   {
     name: "Quick setup process",
-    description: "Description of Feature 1",
-    icon: "https://example.com/icon1.svg",
+    description: "With lots of unique blocks, you can easily build a page without coding. Build your next landing page.",
+    icon:
+    <Image
+    src={"/assets/icons/five.svg"}
+    height={37}
+    width={37}
+    alt="Vector icon"
+  />
   },
   {
     name: "Create custom orders",
-    description: "Description of Feature 2",
-    icon: "https://example.com/icon2.svg",
+    description: "With lots of unique blocks, you can easily build a page without coding. Build your next landing page.",
+    icon:  <Image
+    src={"/assets/icons/four.svg"}
+    height={37}
+    width={37}
+    alt="Vector icon"
+  />,
   },
   {
-    name: "Feature 3",
-    description: "Description of Feature 3",
-    icon: "https://example.com/icon3.svg",
+    name: "Multiple coupons",
+    description: "With lots of unique blocks, you can easily build a page without coding. Build your next landing page.",
+    icon:  <Image
+    src={"/assets/icons/six.svg"}
+    height={37}
+    width={37}
+    alt="Vector icon"
+  />,
   },
   {
     name: "Feature 4",
-    description: "Description of Feature 4",
-    icon: "https://example.com/icon4.svg",
+    description: "With lots of unique blocks, you can easily build a page without coding. Build your next landing page.",
+    icon:  <Image
+    src={"/assets/icons/three.svg"}
+    height={37}
+    width={37}
+    alt="Vector icon"
+  />,
   },
+  {
+    name: "Organize your campaign",
+    description: "With lots of unique blocks, you can easily build a page without coding. Build your next landing page.",
+    icon:  <Image
+    src={"/assets/icons/three.svg"}
+    height={37}
+    width={37}
+    alt="Vector icon"
+  />,
+  },
+  {
+    name: "Track progress fast",
+    description: "With lots of unique blocks, you can easily build a page without coding. Build your next landing page.",
+    icon:  <Image
+    src={"/assets/icons/two.svg"}
+    height={37}
+    width={37}
+    alt="Vector icon"
+  />,
+  },
+ 
 ];
 
 export default function Features() {
@@ -36,7 +79,7 @@ export default function Features() {
         With lots of unique blocks, you can easily build a page without coding.
         Build your next consultancy website within few minutes.
       </h6>
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:px-52 lg:grid-cols-3 gap-6">
         {featuresList.map((feature) => (
           <FeatureCard key={feature.name} feature={feature} />
         ))}
